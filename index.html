@@ -139,33 +139,27 @@
     </section>
 
     <!-- magical wall section -->
-    <div id="home-magicwall" class="fake-magicwall">
-      <ul>
-        <li>
-          <div class="magic-wall_item lazyload" id="modal1">
-            <img src="images/Bez-nazwy-3.jpg" alt="image" />
-            <div class="hover-content"></div>
-            <a href="#" class="colorbox"></a>
-          </div>
-        </li>
-        <!-- magic wall 1 -->
-        <li>
-          <div class="magic-wall_item lazyload">
-            <img src="images/3.jpg" alt="image" />
-            <div class="hover-content"></div>
-            <a href="#" class="colorbox"></a>
-          </div>
-        </li>
-        <!-- magic wall 3 -->
-        <li>
-          <div class="magic-wall_item lazyload">
-            <img src="images/Adrian-Flux-Motorsport-1.jpg" alt="image" />
-            <div class="hover-content"></div>
-            <a href="#" class="colorbox"></a>
-          </div>
-        </li>
-      </ul>
+    <div id="home-magicwall" class="video-grid">
+      <div class="video-item">
+        <video controls>
+          <source src="magnaabogados.mp4" type="video/mp4" />
+          Tu navegador no soporta videos.
+        </video>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="inmobiliaria.mp4" type="video/mp4" />
+          Tu navegador no soporta videos.
+        </video>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="webscrappy.mp4" type="video/mp4" />
+          Tu navegador no soporta videos.
+        </video>
+      </div>
     </div>
+
     <!-- this is the third part the about me section -->
     <section style="border-bottom: 2px solid grey" id="section-about">
       <div class="text-zone3">
@@ -397,65 +391,83 @@
 
     <!-- Contact me section -->
     <section id="section-contact">
-    <div style="border-bottom: 2px solid grey" class="contact-section contact-wrapper">
-      <div class="fake-big">@</div>
-      <form class="contact-form">
-        <div class="contact-heading">
+      <div style="border-bottom: 2px solid grey" class="contact-section contact-wrapper">
+        <div class="fake-big">@</div>
+        <div style="margin-left: 190px" class="contact-info">
           <div id="header">
-            <h2>Contactame</h2>
+            <h2>Contáctame</h2>
           </div>
           <p>
             Estoy interesado en brindarte mi servicio como freelance para que juntos podamos hacer realidad
-            tu pagina web o servicio, sientente libre de escribirme por cualquiera de los siguientes medios.
+            tu página web o proyecto. Si estás interesado, no dudes en escribirme o llamarme a cualquiera de los siguientes medios:
+          </p>
+          <ul>
+            <li  style="color: #08fdd8 !important;"><i class="fas fa-envelope"></i> <strong >Correo:</strong> thomas.esteban@gmail.com</li>
+            <li style="color: #08fdd8 !important;"><i class="fas fa-phone-alt"></i> <strong>Celular:</strong> +57 3165312722</li>
+          </ul>
+          <p>
+            Espero tu mensaje o llamada. ¡Gracias por tu interés!
           </p>
         </div>
-
-        <div class="form-input-wrapper">
-          <div class="form-input-group">
-            <input type="text" placeholder="Name" name="name" class="name" />
-            <span></span>
-          </div>
-          <div class="form-input-group">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              class="email"
-            />
-            <span></span>
-          </div>
-        </div>
-        <div class="form-input-group">
-          <input
-            type="text"
-            placeholder="Subject"
-            class="subject"
-            name="subject"
-          />
-          <span></span>
-        </div>
-        <div class="form-input-group">
-          <textarea
-            type="text"
-            placeholder="Message"
-            class="textarea"
-            name="message"
-          ></textarea>
-          <span></span>
-        </div>
-        <div class="message"></div>
-        <button type="submit" class="contact-button submit-button">
-          <div>
-            <span class="bg"></span>
-            <span class="base"></span>
-            <span class="text">
-              Send Message
-            </span>
-          </div>
-        </button>
-      </form>
       </div>
     </section>
+    <style>
+      .contact-info {
+        background-color: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .contact-info h2 {
+        color: #08fdd8;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .contact-info p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .contact-info ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .contact-info ul li {
+        font-size: 1.2rem;
+        margin: 15px 0;
+      }
+
+      .contact-info ul li i {
+        color: #08fdd8;
+        margin-right: 10px;
+      }
+
+      .contact-info strong {
+        font-weight: 600;
+        color: #333;
+      }
+
+      .fake-big {
+        font-size: 6rem;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        opacity: 0.1;
+        color: #007bff;
+      }
+
+      .contact-section {
+        position: relative;
+        padding: 50px 0;
+      }
+    </style>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -471,6 +483,7 @@
             }
           });
         });
+
       </script>
     <script src="./jquery.tagcanvas.js"></script>
     <script

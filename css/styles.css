@@ -24,6 +24,32 @@ body {
   text-shadow: 2px 2px 4px 0 rgba(27, 26, 26, 0.5);
   user-select: none;
 }
+.video-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre los videos */
+  max-width: 600px; /* Tamaño máximo del contenedor de videos */
+  margin: 0 auto; /* Centra el contenedor en la pantalla */
+}
+
+.video-item video {
+  width: 100%;
+  height: auto; /* Mantiene la proporción del video */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para estilo */
+}
+
+@media (min-width: 768px) {
+  .video-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .video-item {
+    width: 30%; /* Hace que cada video ocupe el 30% del ancho en pantallas más grandes */
+  }
+}
+
 header {
   width: 95%;
   height: 10vh;
